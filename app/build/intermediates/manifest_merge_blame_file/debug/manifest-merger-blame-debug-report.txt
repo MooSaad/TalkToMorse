@@ -1,0 +1,72 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.texttospeech"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+11-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:4:5-70
+11-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:4:22-68
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:5:5-66
+12-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:6:5-65
+13-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:6:22-63
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:7:5-65
+14-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:7:22-62
+15    <uses-permission android:name="android.permission.FLASHLIGHT" />
+15-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:8:5-68
+15-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:8:22-66
+16
+17    <uses-feature android:name="android.hardware.camera" />
+17-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:9:5-60
+17-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:9:19-57
+18    <uses-feature android:name="android.hardware.camera.autofocus" />
+18-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:10:5-70
+18-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:10:19-67
+19    <uses-feature android:name="android.hardware.camera.flash" />
+19-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:11:5-66
+19-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:11:19-63
+20
+21    <application
+21-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:13:5-27:19
+22        android:allowBackup="true"
+22-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:14:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.1.0] /home/mahmoud/.gradle/caches/transforms-2/files-2.1/ae31cc97a3f9383e0242537d69427d3a/core-1.1.0/AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:icon="@mipmap/ic_launcher"
+25-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:15:9-43
+26        android:label="@string/app_name"
+26-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:16:9-41
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:17:9-54
+28        android:supportsRtl="true"
+28-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:18:9-35
+29        android:theme="@style/AppTheme" >
+29-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:19:9-40
+30        <activity android:name="com.example.texttospeech.MainActivity" >
+30-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:20:9-26:20
+30-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:20:19-47
+31            <intent-filter>
+31-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:21:13-25:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:22:17-69
+32-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:22:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:24:17-77
+34-->/home/mahmoud/MorseMe/app/src/main/AndroidManifest.xml:24:27-74
+35            </intent-filter>
+36        </activity>
+37    </application>
+38
+39</manifest>

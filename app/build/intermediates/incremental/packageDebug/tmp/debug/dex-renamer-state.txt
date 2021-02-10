@@ -1,0 +1,4 @@
+#Tue Feb 09 02:05:50 CET 2021
+base.0=/home/mahmoud/MorseMe/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
