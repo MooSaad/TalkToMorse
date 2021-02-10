@@ -1,36 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="LabelFor"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_centerInParent="true"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_height="wrap_content">
+
         <EditText
+            android:id="@+id/text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/button"
-            android:layout_marginRight="15dp"
-            android:padding="10dp"
-            android:hint="Tap to Speak"
-            android:id="@+id/text"
             android:layout_centerInParent="true"
-            />
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toStartOf="@id/button"
+            android:layout_toLeftOf="@id/button"
+            android:autofillHints=""
+            android:background="#6B4CAF50"
+            android:hint="@string/tap_to_speak"
+            android:inputType="textAutoCorrect"
+            android:padding="10dp" />
+
         <ImageView
+            android:id="@+id/button"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:backgroundTint="#F9F8FA"
-            android:paddingRight="10dp"
-            android:src="@drawable/ic_mic_black_off"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:id="@+id/button"/>
+            android:background="#4CAF50"
+            android:backgroundTint="#009688"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_mic_black_off"
+            tools:targetApi="lollipop" />
     </RelativeLayout>
 
+<RelativeLayout
+    android:id="@+id/ctrls"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="400dp"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/vibrate_Button"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4"
+        android:text="@string/vibrate"
+        android:layout_marginStart="10dp" />
+
+    <Button
+        android:id="@+id/toMorseBtn"
+        android:layout_marginLeft="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:text="@string/morse"
+        android:layout_marginStart="150dp" />
+
+    <Button
+        android:id="@+id/flash_Button"
+        android:layout_marginLeft="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8BC34A"
+        android:text="@string/flash"
+        android:layout_marginStart="300dp" />
+
+</RelativeLayout>
+
+<!--
+    <LinearLayout
+        android:id="@+id/ctrls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="430dp"
+        android:backgroundTint="#8BC34A"
+        android:orientation="horizontal"
+        tools:targetApi="lollipop">
+
+        <Button
+            android:id="@+id/toMorseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF5722"
+            android:text="@string/morse" />
+    </LinearLayout>
+-->
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_marginTop="130dp"
+        android:padding="30dp"
+        android:background="#74FFEB3B"
+        android:textSize="20sp" />
+
+<!--
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="530dp"
+        android:backgroundTint="#8BC34A"
+        android:orientation="horizontal"
+        tools:targetApi="lollipop">
+
+        <Button
+            android:id="@+id/vibrate_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00BCD4"
+            android:text="@string/vibrate" />
+    </LinearLayout>
+-->
+<!--
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="630dp"
+        android:backgroundTint="#8BC34A"
+        android:orientation="horizontal"
+        tools:targetApi="lollipop">
+
+        <Button
+            android:id="@+id/flash_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:text="@string/flash" />
+    </LinearLayout>
+-->
 
 
 </RelativeLayout>
